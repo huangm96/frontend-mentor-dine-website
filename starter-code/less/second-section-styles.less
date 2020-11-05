@@ -59,16 +59,17 @@
         letter-spacing: -0.1875px;
         margin-bottom: 80px;
     }
-.rectangle{
-    display: none;
-}
+
+    .rectangle {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .second-section {
         .picture {
             height: 360px;
-
+            width: 573px;
         }
 
         .picture-place {
@@ -79,6 +80,13 @@
         .picture-food {
 
             background-image: url("../images/homepage/locally-sourced-tablet.jpg");
+            position: relative;
+
+            .line {
+                position: absolute;
+                bottom: 50px;
+                right: -50px;
+            }
         }
 
         .content {
@@ -102,9 +110,11 @@
 
             letter-spacing: -0.225px;
         }
+
         .intro {
             position: relative;
         }
+
         .rectangle {
             display: block;
             z-index: -1;
@@ -150,6 +160,11 @@
         .picture-food {
             margin-bottom: -100px;
             background-image: url("../images/homepage/locally-sourced-desktop.jpg");
+
+            .line {
+                top: 250px;
+                right: -100px;
+            }
         }
 
         .intro {
@@ -212,6 +227,6 @@
 
         }
 
-        
+
     }
 }

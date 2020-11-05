@@ -167,12 +167,19 @@
 @media screen and (min-width: 768px) {
   .second-section .picture {
     height: 360px;
+    width: 573px;
   }
   .second-section .picture-place {
     background-image: url("../images/homepage/enjoyable-place-tablet.jpg");
   }
   .second-section .picture-food {
     background-image: url("../images/homepage/locally-sourced-tablet.jpg");
+    position: relative;
+  }
+  .second-section .picture-food .line {
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
   }
   .second-section .content {
     width: 50vw;
@@ -225,6 +232,10 @@
   .second-section .picture-food {
     margin-bottom: -100px;
     background-image: url("../images/homepage/locally-sourced-desktop.jpg");
+  }
+  .second-section .picture-food .line {
+    top: 250px;
+    right: -100px;
   }
   .second-section .intro {
     justify-content: space-evenly;
