@@ -10,9 +10,9 @@
   align-items: center;
 }
 .first-section .content {
+  width: 326px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .first-section img {
@@ -27,10 +27,9 @@
   text-align: center;
   letter-spacing: -0.8px;
   padding: 0 20px;
-  margin: 25px 24px;
+  margin: 25px 0;
 }
 .first-section .description {
-  margin: 0px 24px;
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
@@ -52,9 +51,16 @@
   letter-spacing: 2px;
   color: white;
 }
+.first-section button:hover {
+  background: white;
+  color: black;
+}
 @media screen and (min-width: 768px) {
   .first-section {
     background-image: url("../images/homepage/hero-bg-tablet.jpg");
+  }
+  .first-section .content {
+    width: 689px;
   }
   .first-section .title {
     font-size: 48px;
@@ -62,15 +68,51 @@
     /* or 133% */
     text-align: center;
     letter-spacing: -0.6px;
-    padding: 0 150px;
+    padding: 0 100px;
   }
   .first-section .description {
-    margin: 0px 120px;
+    padding: 0px 70px;
     font-size: 18px;
     line-height: 30px;
     /* or 167% */
     text-align: center;
     letter-spacing: -0.225px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .first-section {
+    background-image: url("../images/homepage/hero-bg-desktop.jpg");
+    align-items: flex-start;
+  }
+  .first-section .content {
+    width: 523px;
+    align-items: flex-start;
+    margin-left: 10vw;
+  }
+  .first-section img {
+    margin-top: 65px;
+    margin-left: 10vw;
+    margin-bottom: 100px;
+    width: 103px;
+  }
+  .first-section .title {
+    font-size: 64px;
+    line-height: 72px;
+    /* or 112% */
+    letter-spacing: -0.8px;
+    text-align: left;
+    padding: 0;
+  }
+  .first-section .description {
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    letter-spacing: -0.225px;
+    text-align: left;
+    padding: 0;
+  }
+  .first-section button {
+    margin: 25px 0 150px 0;
   }
 }
 .second-section {
@@ -151,13 +193,13 @@
   margin: 50px auto;
 }
 .third-section .dishes-box .dish .picture-salmon {
-  background: url("../images/homepage/salmon-mobile.jpg");
+  background-image: url("../images/homepage/salmon-mobile.jpg");
 }
 .third-section .dishes-box .dish .picture-beef {
-  background: url("../images/homepage/beef-mobile.jpg");
+  background-image: url("../images/homepage/beef-mobile.jpg");
 }
 .third-section .dishes-box .dish .picture-chocolate {
-  background: url("../images/homepage/chocolate-mobile.jpg");
+  background-image: url("../images/homepage/chocolate-mobile.jpg");
 }
 body {
   font-family: Spartan;
