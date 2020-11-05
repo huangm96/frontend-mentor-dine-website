@@ -1,9 +1,14 @@
 .second-section {
-    margin: -70px 24px 0px 24px;
 
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .picture {
-
+        width: 80vw;
         height: 400px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -11,7 +16,7 @@
     }
 
     .picture-place {
-
+        margin-top: -100px;
         background-image: url("../images/homepage/enjoyable-place-mobile.jpg");
 
     }
@@ -22,35 +27,191 @@
     }
 
     .content {
+        width: 80vw;
+
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
 
-        img {
-            margin: 35px auto;
+    img {
+        margin: 35px auto;
+    }
+
+    .title {
+
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        /* or 125% */
+
+        text-align: center;
+        letter-spacing: -0.4px;
+    }
+
+    .description {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 167% */
+
+        text-align: center;
+        letter-spacing: -0.1875px;
+        margin-bottom: 80px;
+    }
+.rectangle{
+    display: none;
+}
+}
+
+@media screen and (min-width: 768px) {
+    .second-section {
+        .picture {
+            height: 360px;
+
+        }
+
+        .picture-place {
+            background-image: url("../images/homepage/enjoyable-place-tablet.jpg");
+
+        }
+
+        .picture-food {
+
+            background-image: url("../images/homepage/locally-sourced-tablet.jpg");
+        }
+
+        .content {
+            width: 50vw;
+
         }
 
         .title {
 
-            font-weight: bold;
-            font-size: 32px;
-            line-height: 40px;
-            /* or 125% */
+            font-size: 40px;
+            line-height: 56px;
+            /* or 140% */
 
-            text-align: center;
-            letter-spacing: -0.4px;
+            letter-spacing: -0.5px;
         }
 
         .description {
-            font-weight: normal;
-            font-size: 15px;
-            line-height: 25px;
+            font-size: 18px;
+            line-height: 30px;
             /* or 167% */
 
-            text-align: center;
-            letter-spacing: -0.1875px;
-            color: #242B37;
-            margin-bottom: 80px;
+            letter-spacing: -0.225px;
         }
+        .intro {
+            position: relative;
+        }
+        .rectangle {
+            display: block;
+            z-index: -1;
+            width: 50vw;
+            height: 320px;
+            position: absolute;
+            background: #5C6779;
+            mix-blend-mode: normal;
+            opacity: 0.08;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+        .rectangle-left {
+            top: 100px;
+            left: 0;
+
+            border-radius: 100px 0px 0px 0px;
+
+        }
+
+        .rectangle-right {
+            bottom: 0;
+            right: 0;
+            border-radius: 0px 100px 0px 0px;
+
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .second-section {
+        .picture {
+            width: 540px;
+            height: 720px;
+
+        }
+
+        .picture-place {
+            background-image: url("../images/homepage/enjoyable-place-desktop.jpg");
+
+        }
+
+        .picture-food {
+            margin-bottom: -100px;
+            background-image: url("../images/homepage/locally-sourced-desktop.jpg");
+        }
+
+        .intro {
+            justify-content: space-evenly;
+        }
+
+        .intro.place {
+            flex-direction: row;
+            margin-bottom: 80px;
+            //justify-content: center;
+            //align-items: center;
+        }
+
+        .intro.food {
+            flex-direction: row-reverse;
+            //justify-content: center;
+            //align-items: center;
+        }
+
+        .content {
+            width: 30vw;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        img {
+            margin: 35px 0;
+        }
+
+        .title {
+            text-align: start;
+
+            font-size: 40px;
+            line-height: 56px;
+            /* or 140% */
+
+            letter-spacing: -0.5px;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 30px;
+            /* or 167% */
+
+            letter-spacing: -0.225px;
+
+            text-align: start;
+
+        }
+
+        .rectangle {
+            width: 65vw;
+            height: 320px;
+        }
+
+        .rectangle-left {
+            top: 270px;
+            left: 0;
+
+
+        }
+
+        
     }
 }
