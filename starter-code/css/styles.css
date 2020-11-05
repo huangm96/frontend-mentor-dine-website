@@ -1,4 +1,4 @@
-.firstSection {
+.first-section {
   color: white;
   background-image: url("../images/homepage/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
@@ -9,19 +9,17 @@
   flex-direction: column;
   align-items: center;
 }
-.firstSection .content {
+.first-section .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.firstSection img {
+.first-section img {
   margin-top: 35vh;
   width: 103px;
 }
-.firstSection .title {
-  font-family: Spartan;
-  font-style: normal;
+.first-section .title {
   font-weight: 300;
   font-size: 32px;
   line-height: 40px;
@@ -29,12 +27,10 @@
   text-align: center;
   letter-spacing: -0.8px;
   padding: 0 20px;
-  margin: 25px 25px;
+  margin: 25px 24px;
 }
-.firstSection .description {
-  margin: 0px 25px;
-  font-family: Spartan;
-  font-style: normal;
+.first-section .description {
+  margin: 0px 24px;
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
@@ -42,15 +38,13 @@
   text-align: center;
   letter-spacing: -0.1875px;
 }
-.firstSection button {
+.first-section button {
   margin: 30px auto 160px auto;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   width: 244.25px;
   height: 64px;
   background-color: black;
-  font-family: Spartan;
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
@@ -58,32 +52,51 @@
   letter-spacing: 2px;
   color: white;
 }
-.secondSection {
+@media screen and (min-width: 768px) {
+  .first-section {
+    background-image: url("../images/homepage/hero-bg-tablet.jpg");
+  }
+  .first-section .title {
+    font-size: 48px;
+    line-height: 64px;
+    /* or 133% */
+    text-align: center;
+    letter-spacing: -0.6px;
+    padding: 0 150px;
+  }
+  .first-section .description {
+    margin: 0px 120px;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    text-align: center;
+    letter-spacing: -0.225px;
+  }
+}
+.second-section {
   margin: -70px 24px 0px 24px;
 }
-.secondSection .picture {
+.second-section .picture {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.secondSection .picture-place {
+.second-section .picture-place {
   background-image: url("../images/homepage/enjoyable-place-mobile.jpg");
 }
-.secondSection .picture-food {
+.second-section .picture-food {
   background-image: url("../images/homepage/locally-sourced-mobile.jpg");
 }
-.secondSection .content {
+.second-section .content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.secondSection .content img {
+.second-section .content img {
   margin: 35px auto;
 }
-.secondSection .content .title {
-  font-family: Spartan;
-  font-style: normal;
+.second-section .content .title {
   font-weight: bold;
   font-size: 32px;
   line-height: 40px;
@@ -91,9 +104,7 @@
   text-align: center;
   letter-spacing: -0.4px;
 }
-.secondSection .content .description {
-  font-family: Spartan;
-  font-style: normal;
+.second-section .content .description {
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
@@ -102,4 +113,53 @@
   letter-spacing: -0.1875px;
   color: #242B37;
   margin-bottom: 80px;
+}
+.third-section {
+  background-color: black;
+  color: white;
+  padding: 0 24px;
+}
+.third-section .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.third-section .menu img {
+  margin: 50px auto;
+}
+.third-section .menu .menu-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+  text-align: center;
+  letter-spacing: -0.4px;
+}
+.third-section .menu .menu-description {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  text-align: center;
+  letter-spacing: -0.1875px;
+}
+.third-section .dishes-box .dish .picture {
+  height: 245px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 50px auto;
+}
+.third-section .dishes-box .dish .picture-salmon {
+  background: url("../images/homepage/salmon-mobile.jpg");
+}
+.third-section .dishes-box .dish .picture-beef {
+  background: url("../images/homepage/beef-mobile.jpg");
+}
+.third-section .dishes-box .dish .picture-chocolate {
+  background: url("../images/homepage/chocolate-mobile.jpg");
+}
+body {
+  font-family: Spartan;
+  font-style: normal;
 }

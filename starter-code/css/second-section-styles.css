@@ -1,0 +1,41 @@
+.secondSection {
+  margin: -70px 24px 0px 24px;
+}
+.secondSection .picture {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.secondSection .picture-place {
+  background-image: url("../images/homepage/enjoyable-place-mobile.jpg");
+}
+.secondSection .picture-food {
+  background-image: url("../images/homepage/locally-sourced-mobile.jpg");
+}
+.secondSection .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.secondSection .content img {
+  margin: 35px auto;
+}
+.secondSection .content .title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+  text-align: center;
+  letter-spacing: -0.4px;
+}
+.secondSection .content .description {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  text-align: center;
+  letter-spacing: -0.1875px;
+  color: #242B37;
+  margin-bottom: 80px;
+}
