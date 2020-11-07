@@ -2,14 +2,16 @@
     background-color: black;
     color: white;
 
-    padding: 0 24px;
+    padding: 50px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
 
     .menu {
 
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
         img {
             margin: 50px auto;
@@ -21,8 +23,8 @@
             line-height: 40px;
             /* or 125% */
 
-            text-align: center;
             letter-spacing: -0.4px;
+            margin-bottom: 30px;
         }
 
         .menu-description {
@@ -31,44 +33,169 @@
             line-height: 25px;
             /* or 167% */
 
-            text-align: center;
             letter-spacing: -0.1875px;
         }
     }
 
     .dishes-box {
-       
+
 
         .dish {
-            // display: flex;
-            // flex-direction: column;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .picture {
+            width: 100%;
+            height: 245px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 50px auto;
+        }
+
+        .picture-salmon {
+
+            background-image: url("../images/homepage/salmon-mobile.jpg");
+
+        }
+
+        .picture-beef {
+
+            background-image: url("../images/homepage/beef-mobile.jpg");
+
+        }
+
+        .picture-chocolate {
+
+            background-image: url("../images/homepage/chocolate-mobile.jpg");
+
+        }
+
+        .dish-content {
+
+            .dish-title {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 28px;
+                /* identical to box height, or 156% */
+
+                letter-spacing: -0.225px;
+                margin-bottom: 5px;
+            }
+
+            .dish-description {
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 28px;
+                /* or 187% */
+                letter-spacing: -0.1875px;
+            }
+        }
+
+        .rectangle-divide {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .menu {
+            width: 60vw;
+
+
+            .menu-title {
+                font-size: 40px;
+                line-height: 56px;
+                /* or 140% */
+
+                letter-spacing: -0.5px;
+            }
+
+            .menu-description {
+                font-size: 18px;
+                line-height: 30px;
+                /* or 167% */
+
+                letter-spacing: -0.225px;
+            }
+        }
+
+        .dishes-box {
+
+            margin: 30px 0;
+            width: 75vw;
+
+            .dish {
+                flex-direction: row;
+                padding: 30px 0;
+            }
+
             .picture {
-                height: 245px;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                margin: 50px auto;
+                width: 128px;
+                height: 96px;
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                margin: 0;
             }
 
             .picture-salmon {
 
-                background-image: url("../images/homepage/salmon-mobile.jpg");
+                background-image: url("../images/homepage/salmon-desktop-tablet.jpg");
 
             }
 
             .picture-beef {
 
-                background-image: url("../images/homepage/beef-mobile.jpg");
+                background-image: url("../images/homepage/beef-desktop-tablet.jpg");
 
             }
 
             .picture-chocolate {
 
-                background-image: url("../images/homepage/chocolate-mobile.jpg");
+                background-image: url("../images/homepage/chocolate-desktop-tablet.jpg");
 
             }
+
+            .dish-content {
+                text-align: start;
+
+            }
+
+            .rectangle-divide {
+                display: block;
+                width: 32px;
+                height: 1px;
+                background-color: #9E7F66;
+                margin-right: 30px;
+                margin-top: 15px;
+            }
+
+            .salmon,
+            .beef {
+                border-bottom: rgba(255, 255, 255, 0.15) solid 1px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: start;
+        padding: 150px 8vw 50px 8vw;
+
+        .menu {
+            width: 35vw;
+
         }
 
+        .dishes-box {
+
+            margin: 35px 0;
+            width: 40vw;
+
+
+        }
     }
+
 
 }

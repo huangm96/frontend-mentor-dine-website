@@ -1,4 +1,5 @@
 .second-section {
+    margin: 0 24px;
 
     .intro {
         display: flex;
@@ -8,7 +9,7 @@
     }
 
     .picture {
-        width: 80vw;
+        width: 100%;
         height: 400px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -24,14 +25,19 @@
     .picture-food {
 
         background-image: url("../images/homepage/locally-sourced-mobile.jpg");
+
+        .line {
+            display: none;
+        }
     }
 
     .content {
-        width: 80vw;
-
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        text-align: center;
+
     }
 
     img {
@@ -45,8 +51,8 @@
         line-height: 40px;
         /* or 125% */
 
-        text-align: center;
         letter-spacing: -0.4px;
+        margin-bottom: 20px;
     }
 
     .description {
@@ -55,7 +61,6 @@
         line-height: 25px;
         /* or 167% */
 
-        text-align: center;
         letter-spacing: -0.1875px;
         margin-bottom: 80px;
     }
@@ -63,11 +68,13 @@
     .rectangle {
         display: none;
     }
-}
 
-@media screen and (min-width: 768px) {
-    .second-section {
+
+    @media screen and (min-width: 768px) {
+        margin: 0 0;
+
         .picture {
+
             height: 360px;
             width: 573px;
         }
@@ -83,6 +90,7 @@
             position: relative;
 
             .line {
+                display: block;
                 position: absolute;
                 bottom: 50px;
                 right: -50px;
@@ -128,7 +136,7 @@
         }
 
         .rectangle-left {
-            top: 100px;
+            top: 50px;
             left: 0;
 
             border-radius: 100px 0px 0px 0px;
@@ -142,10 +150,9 @@
 
         }
     }
-}
 
-@media screen and (min-width: 1200px) {
-    .second-section {
+
+    @media screen and (min-width: 1200px) {
         .picture {
             width: 540px;
             height: 720px;
@@ -174,45 +181,22 @@
         .intro.place {
             flex-direction: row;
             margin-bottom: 80px;
-            //justify-content: center;
-            //align-items: center;
         }
 
         .intro.food {
             flex-direction: row-reverse;
-            //justify-content: center;
-            //align-items: center;
         }
 
         .content {
             width: 30vw;
             justify-content: flex-start;
             align-items: flex-start;
+
+            text-align: start;
         }
 
         img {
             margin: 35px 0;
-        }
-
-        .title {
-            text-align: start;
-
-            font-size: 40px;
-            line-height: 56px;
-            /* or 140% */
-
-            letter-spacing: -0.5px;
-        }
-
-        .description {
-            font-size: 18px;
-            line-height: 30px;
-            /* or 167% */
-
-            letter-spacing: -0.225px;
-
-            text-align: start;
-
         }
 
         .rectangle {
@@ -221,7 +205,7 @@
         }
 
         .rectangle-left {
-            top: 270px;
+            top: 220px;
             left: 0;
 
 
@@ -229,4 +213,5 @@
 
 
     }
+
 }
