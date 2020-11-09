@@ -113,17 +113,19 @@
     </div>
   </div>
   <div class="fourth-section">
-    <div class="picture"><img class="line" src="./images/patterns/pattern-lines.svg" /></div>
+    <div id="tab-pic" class="picture family">
+      <img class="line" src="./images/patterns/pattern-lines.svg" />
+    </div>
     <div class="rectangle rectangle-left"></div>
     <div id="tabs-container">
       <ul class="tabs-menu">
-        <li class='active'><a href="#family">Family Gathering</a>
+        <li class='active'><a href="#family" class="family">Family Gathering</a>
           <div class="divide"></div>
         </li>
-        <li><a href="#special">Special Events</a>
+        <li><a href="#special" class="special">Special Events</a>
           <div></div>
         </li>
-        <li><a href="#social">Social Events</a>
+        <li><a href="#social" class="social">Social Events</a>
           <div></div>
         </li>
       </ul>
@@ -191,6 +193,8 @@
 
       // display only active tab content
       var activeTab = $(this).attr("href");
+      var activePic = $(this).attr("class");
+      $("#tab-pic").attr("class","picture "+activePic)
       $('.tab-content').not(activeTab).css("display", "none");
 
       $(activeTab).fadeIn();

@@ -507,7 +507,6 @@ video {
   width: 90vw;
 }
 .fourth-section .picture {
-  background-image: url("../images/homepage/family-gathering-mobile.jpg");
   width: 90vw;
   height: 400px;
   background-repeat: no-repeat;
@@ -516,6 +515,15 @@ video {
 }
 .fourth-section .picture img {
   display: none;
+}
+.fourth-section .picture.family {
+  background-image: url("../images/homepage/family-gathering-mobile.jpg");
+}
+.fourth-section .picture.special {
+  background-image: url("../images/homepage/special-events-mobile.jpg");
+}
+.fourth-section .picture.social {
+  background-image: url("../images/homepage/social-events-mobile.jpg");
 }
 .fourth-section .tab {
   display: flex;
@@ -612,7 +620,6 @@ video {
     justify-content: space-between;
   }
   .fourth-section .picture {
-    background-image: url("../images/homepage/family-gathering-tablet.jpg");
     width: 573px;
     height: 360px;
     margin: 120px auto 10px auto;
@@ -621,6 +628,15 @@ video {
     display: block;
     margin-top: -40px;
     margin-left: -60px;
+  }
+  .fourth-section .picture.family {
+    background-image: url("../images/homepage/family-gathering-tablet.jpg");
+  }
+  .fourth-section .picture.special {
+    background-image: url("../images/homepage/special-events-tablet.jpg");
+  }
+  .fourth-section .picture.social {
+    background-image: url("../images/homepage/social-events-tablet.jpg");
   }
   .fourth-section .content-title {
     font-size: 40px;
@@ -662,7 +678,6 @@ video {
     align-items: center;
   }
   .fourth-section .picture {
-    background-image: url("../images/homepage/family-gathering-desktop.jpg");
     width: 45vw;
     min-height: 600px;
     margin: 120px 0 120px 0;
@@ -671,6 +686,15 @@ video {
     display: block;
     margin-top: -40px;
     margin-left: -60px;
+  }
+  .fourth-section .picture.family {
+    background-image: url("../images/homepage/family-gathering-desktop.jpg");
+  }
+  .fourth-section .picture.special {
+    background-image: url("../images/homepage/special-events-desktop.jpg");
+  }
+  .fourth-section .picture.social {
+    background-image: url("../images/homepage/social-events-desktop.jpg");
   }
   .fourth-section #tabs-container {
     display: flex;
