@@ -3,10 +3,36 @@
     flex-direction: column;
     align-items: center;
 
+    #tabs-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .picture {
+        background-image: url("../images/homepage/family-gathering-mobile.jpg");
+        width: 90vw;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 80px auto 10px auto;
+
+        img {
+            display: none;
+        }
+    }
+
+    .tab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .tab-content {
         display: none;
-        text-align: center;
-        width: 90vw;
+
     }
 
     #family {
@@ -19,7 +45,7 @@
 
     li {
         text-align: center;
-        margin: 20px auto;
+        margin: 20px 0;
     }
 
     .divide {
@@ -81,9 +107,10 @@
 
         letter-spacing: -0.1875px;
     }
+
     button {
 
-        margin: 30px auto ;
+        margin: 30px 0 100px 0;
         border: 1px solid #FFFFFF;
         box-sizing: border-box;
         width: 244.25px;
@@ -100,10 +127,159 @@
 
         &:hover {
             background: white;
-            color: black
+            border: 1px solid black;
+            color: black;
+            cursor: pointer;
         }
     }
-    @media screen and (min-width: 768px) {}
 
-    @media screen and(min-width:1200px) {}
+    .rectangle {
+        display: none;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        position: relative;
+
+        ul {
+            width: 80vw;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .picture {
+            background-image: url("../images/homepage/family-gathering-tablet.jpg");
+            width: 573px;
+            height: 360px;
+            margin: 120px auto 10px auto;
+
+            img {
+                display: block;
+                margin-top: -40px;
+                margin-left: -60px;
+            }
+        }
+
+        .content-title {
+
+            font-size: 40px;
+            line-height: 56px;
+            /* identical to box height, or 140% */
+
+            letter-spacing: -0.5px;
+        }
+
+        .content-content {
+            font-size: 18px;
+            line-height: 30px;
+            /* or 167% */
+
+            letter-spacing: -0.225px;
+        }
+
+        .tab {
+            width: 50vw;
+        }
+
+
+        .rectangle {
+            display: block;
+            z-index: -1;
+            width: 50%;
+            height: 320px;
+            position: absolute;
+            background: #5C6779;
+            mix-blend-mode: normal;
+            opacity: 0.08;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+        .rectangle-left {
+            top: 0;
+            left: 0;
+
+            border-radius: 100px 0px 0px 0px;
+
+        }
+    }
+
+    @media screen and(min-width:1200px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .picture {
+            background-image: url("../images/homepage/family-gathering-desktop.jpg");
+            width: 45vw;
+            min-height: 600px;
+            margin: 120px 0 120px 0;
+
+            img {
+                display: block;
+                margin-top: -40px;
+                margin-left: -60px;
+            }
+        }
+
+        #tabs-container {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            width: 30vw;
+        }
+
+        ul {
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        li {
+            text-align: start;
+        }
+
+
+        .tab {
+
+            align-items: flex-start;
+            margin-left: 80px;
+            width: 30vw;
+        }
+
+        .tab-content {
+            display: none;
+            text-align: start;
+
+        }
+
+        .rectangle {
+
+            width: 40vw;
+
+        }
+
+        .tabs-menu li {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: flex-end;
+            margin: 5px 0;
+        }
+
+        a {
+            margin-left: 80px;
+        }
+
+        .active a {
+            margin-left: 0;
+        }
+
+        .divide {
+            width: 60px;
+            margin: 0 20px 0 0;
+
+        }
+    }
 }
