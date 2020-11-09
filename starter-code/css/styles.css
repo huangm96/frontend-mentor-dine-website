@@ -494,6 +494,87 @@ video {
     width: 40vw;
   }
 }
+.fourth-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fourth-section .tab-content {
+  display: none;
+  text-align: center;
+  width: 90vw;
+}
+.fourth-section #family {
+  display: block;
+}
+.fourth-section ul {
+  list-style-type: none;
+}
+.fourth-section li {
+  text-align: center;
+  margin: 20px auto;
+}
+.fourth-section .divide {
+  width: 48px;
+  height: 1px;
+  background-color: #9E7F66;
+  margin: 0 auto;
+}
+.fourth-section a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  /* identical to box height, or 200% */
+  letter-spacing: 2px;
+  color: #4C4C4C;
+  opacity: 0.5;
+}
+.fourth-section a:visited {
+  color: black;
+}
+.fourth-section .active a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  /* identical to box height, or 200% */
+  letter-spacing: 2px;
+  color: black;
+  opacity: 1;
+}
+.fourth-section .content-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+  letter-spacing: -0.4px;
+  margin: 10px 0;
+}
+.fourth-section .content-content {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  letter-spacing: -0.1875px;
+}
+.fourth-section button {
+  margin: 30px auto ;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  width: 244.25px;
+  height: 64px;
+  background-color: black;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+  letter-spacing: 2px;
+  color: white;
+}
+.fourth-section button:hover {
+  background: white;
+  color: black;
+}
 body {
   font-family: Spartan;
   font-style: normal;
