@@ -9,16 +9,14 @@
   flex-direction: column;
   align-items: center;
 }
+.first-section .logo {
+  margin-top: 35vh;
+}
 .first-section .content {
-  width: 326px;
+  width: 80vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-.first-section img {
-  margin-top: 35vh;
-  width: 103px;
 }
 .first-section .title {
   font-weight: 300;
@@ -28,10 +26,9 @@
   text-align: center;
   letter-spacing: -0.8px;
   padding: 0 20px;
-  margin: 25px 24px;
+  margin: 25px 0;
 }
 .first-section .description {
-  margin: 0px 24px;
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
@@ -53,12 +50,14 @@
   letter-spacing: 2px;
   color: white;
 }
+.first-section button:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .first-section {
     background-image: url("../images/homepage/hero-bg-tablet.jpg");
-  }
-  .first-section .content {
-    width: 689px;
   }
   .first-section .title {
     font-size: 48px;
@@ -66,10 +65,10 @@
     /* or 133% */
     text-align: center;
     letter-spacing: -0.6px;
-    padding: 0 70px;
+    padding: 0 100px;
   }
   .first-section .description {
-    margin: 0px 70px;
+    padding: 0px 70px;
     font-size: 18px;
     line-height: 30px;
     /* or 167% */
@@ -85,10 +84,12 @@
   .first-section .content {
     width: 523px;
     align-items: flex-start;
+    margin-left: 10vw;
   }
-  .first-section img {
-    margin-top: 0;
-    width: 103px;
+  .first-section .logo {
+    margin-top: 65px;
+    margin-left: 10vw;
+    margin-bottom: 100px;
   }
   .first-section .title {
     font-size: 64px;
@@ -97,7 +98,6 @@
     letter-spacing: -0.8px;
     text-align: left;
     padding: 0;
-    margin: 0;
   }
   .first-section .description {
     font-size: 18px;
@@ -105,9 +105,9 @@
     /* or 167% */
     letter-spacing: -0.225px;
     text-align: left;
-    margin: 0;
+    padding: 0;
   }
   .first-section button {
-    margin: 0;
+    margin: 25px 0 150px 0;
   }
 }
