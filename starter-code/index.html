@@ -19,7 +19,7 @@
 
 <body>
   <div class="first-section">
-    <img src="./images//logo.svg" />
+    <img class="logo" src="./images/logo.svg" alt="logo img"/>
     <div class="content">
       <p class="title">Exquisite dining since 1989</p>
 
@@ -154,7 +154,7 @@
             parties. We’ll work with you to make your event a hit with everyone.</p>
         </div>
 
-        <button>Book a table</button>
+        <button>BOOK A TABLE</button>
       </div>
 
 
@@ -169,17 +169,26 @@
   <div class="fifth-section">
     <p>Ready to make a reservation?</p>
 
-    <button>Book a table</button>
+    <button>BOOK A TABLE</button>
 
   </div>
   <div class="footer">
-    Marthwaite, Sedbergh
-    Cumbria
-    +00 44 123 4567
+    <img  class="logo" src="./images/logo.svg" alt="logo img" />
 
-    Open Times
-    Mon - Fri: 09:00 AM - 10:00 PM
-    Sat - Sun: 09:00 AM - 11:30 PM
+    <div>
+      <address>Marthwaite, Sedbergh
+        Cumbria</address>
+      <p>+00 44 123 4567</p>
+
+    </div>
+    <div>
+      <p>Open Times</p>
+      <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+      <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+    </div>
+
+
+
   </div>
 </body>
 <script>
@@ -194,7 +203,7 @@
       // display only active tab content
       var activeTab = $(this).attr("href");
       var activePic = $(this).attr("class");
-      $("#tab-pic").attr("class","picture "+activePic)
+      $("#tab-pic").attr("class", "picture " + activePic)
       $('.tab-content').not(activeTab).css("display", "none");
 
       $(activeTab).fadeIn();
