@@ -1,3 +1,77 @@
-form{
-    
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    margin: -150px 16px 150px 16px;
+    background: white;
+    box-shadow: 0px 20px 100px #888888;
+    input {
+
+        border: none;
+        padding: 15px 5px;
+        font-family: Spartan;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        /* identical to box height, or 156% */
+
+        letter-spacing: -0.225px;
+
+        color: #111111;
+        border-bottom: 2px solid grey;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    .email {
+        margin-top: 30px;
+    }
+
+    input[tpye=email] {
+        margin-top: 30px;
+    }
+
+    label {
+        margin-top: 30px;
+    }
+
+
+
+    input:focus {
+        outline: 1px solid transparent;
+    }
+
+    input[type=time]::-webkit-datetime-edit-hour-field,
+    input[type=time]::-webkit-datetime-edit-minute-field,
+    input[type=time]::-webkit-datetime-edit-ampm-field,
+    input[type=date]::-webkit-datetime-edit-day-field,
+    input[type=date]::-webkit-datetime-edit-month-field,
+    input[type=date]::-webkit-datetime-edit-year-field {
+        margin: auto 30px;
+    }
+
+        button {
+
+            margin: 30px auto ;
+            border: 1px solid black;
+            box-sizing: border-box;
+            width: 244.25px;
+            height: 64px;
+            background-color: black;
+
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            /* identical to box height, or 114% */
+
+            letter-spacing: 2px;
+            color: white;
+
+            &:hover {
+                background: white;
+                color: black;
+                cursor: pointer;
+            }
+        }
 }

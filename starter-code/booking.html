@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;600;700&display=swap" rel="stylesheet">
-  <!--  jQuery  -->
-  <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.min.css" rel="stylesheet" />
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <title>Frontend Mentor | Dine Website Challenge</title>
 </head>
+<!--  jQuery  -->
+<link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <body>
   <div class="booking-header">
@@ -24,17 +24,20 @@
     <p class="title">Reservations</p>
     <p class="content"> We can’t wait to host you. If you have any special requirements please feel free to
       call on the phone number below. We’ll be happy to accommodate you.</p>
-      <button>RESERVE PLACE</button>
+    <button>RESERVE PLACE</button>
   </div>
 
 
-  <form> <input /><input /><input /><input />
-    Name
-    Email
-    Pick a date
-    Pick a time
+  <form> <input type="text" name="name" placeholder="Name" required />
 
-    Make Reservation
+    <input type="email" class="email" placeholder="Email" required />
+    <label>Pick a date</label>
+    <input type="date" name="date" required />
+    <label>Pick a time</label>
+    <input type="time" id="time" name="time" min="09:00" max="21:00" value="09:00" step="900" required />
+
+
+    <button type="submit">MAKE RESERVATION</button>
   </form>
 
   <div class="footer">
