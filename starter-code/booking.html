@@ -27,26 +27,32 @@
 
     <button>RESERVE PLACE</button>
   </div>
-  
-
-    <form> <input type="text" name="name" placeholder="Name" required />
-
-      <input type="email" class="email" placeholder="Email" required />
-      <div class="time-box"><label>Pick a date</label>
-        <input type="date" name="date" required /></div>
-      <div class="time-box"><label>Pick a time</label>
-        <input type="time" id="time" name="time" min="09:00" max="21:00" value="09:00" step="900" required />
-      </div>
 
 
+  <form> <input type="text" name="name" placeholder="Name" required />
 
-      <button type="submit">MAKE RESERVATION</button>
+    <input type="email" class="email" placeholder="Email" required />
+    <div class="time-box"><label>Pick a date</label>
+      <input type="date" name="date" required /></div>
+    <div class="time-box"><label>Pick a time</label>
+      <input type="time" id="time" name="time" min="09:00" max="21:00" value="09:00" step="900" required />
+    </div>
 
-<div class="rectangle rectangle-left"></div>
-<img class="line" src="./images/patterns/pattern-lines.svg" />
-    </form>
-    
-  
+    <div class="people-number-system">
+      <img src="images/icons/icon-minus.svg">
+      <div class="people-number-box">
+        <input type=number class="people" value=4 readonly />
+        <p>people</p>
+      </div><img src="images/icons/icon-plus.svg">
+    </div>
+
+    <button type="submit">MAKE RESERVATION</button>
+
+    <div class="rectangle rectangle-left"></div>
+    <img class="line" src="./images/patterns/pattern-lines.svg" />
+  </form>
+
+
   <div class="footer">
     <img class="logo" src="./images/logo.svg" alt="logo img" />
     <div class="info">

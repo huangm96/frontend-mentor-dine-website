@@ -948,7 +948,7 @@ form {
 }
 form input {
   border: none;
-  padding: 15px 5px;
+  padding: 30px 5px 15px 5px;
   font-family: Spartan;
   font-style: normal;
   font-weight: normal;
@@ -963,6 +963,36 @@ form input {
 }
 form .email {
   margin-top: 30px;
+}
+form .people-number-system {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+  margin: 24px auto 0px auto;
+}
+form .people-number-system img {
+  padding: 5px 30px;
+}
+form .people-number-box {
+  display: flex;
+  align-items: baseline;
+}
+form .people-number-box p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  letter-spacing: -0.225px;
+  color: #151515;
+}
+form .people {
+  width: 30px;
+  border-bottom: 0px solid grey;
+  font-weight: bold;
+  color: #151515;
+  opacity: 1;
 }
 form label {
   margin-top: 30px;
@@ -1023,6 +1053,7 @@ form .line {
   }
   form label {
     margin-right: 30px;
+    margin-top: 45px;
   }
   form input[type=text],
   form input[type=email] {
@@ -1040,8 +1071,8 @@ form .line {
   form .rectangle {
     display: block;
     z-index: -2;
-    width: 80%;
-    height: 300px;
+    width: calc(55% + 250px);
+    height: 459px;
     position: absolute;
     background: #5C6779;
     mix-blend-mode: normal;
@@ -1051,13 +1082,13 @@ form .line {
   form .rectangle-left {
     top: 482px;
     left: 0;
-    border-radius: 000px 0px 0px 100px;
+    border-radius: 0px 0px 0px 100px;
   }
   form .line {
     display: block;
     position: absolute;
     z-index: -1;
-    top: 640px;
+    top: 810px;
     left: calc(45% - 80px);
   }
 }
