@@ -25,31 +25,47 @@
     <p class="content"> We can’t wait to host you. If you have any special requirements please feel free to
       call on the phone number below. We’ll be happy to accommodate you.</p>
 
-    <button>RESERVE PLACE</button>
+    <button class="reserve-btn">RESERVE PLACE</button>
   </div>
 
 
-  <form> <input type="text" name="name" placeholder="Name" required />
+  <form id="reservation-form">
 
-    <input type="email" class="email" placeholder="Email" required />
-    <div class="time-box"><label>Pick a date</label>
-      <input type="date" name="date" required /></div>
-    <div class="time-box"><label>Pick a time</label>
+    <input type="text" name="name" placeholder="Name" required />
+    <label name="name" class="lable-of-error hidden">This field is required</label>
+
+    <input type="email" class="email" name="email" placeholder="Email" required />
+    <label name="email" class="lable-of-error hidden">This field is required</label>
+    <div class="time-box">
+      <label class="lable-of-input">Pick a date</label>
+      <input type="date" name="date" required />
+
+    </div>
+    <label name="date" class="lable-of-error hidden">This field is required</label>
+    <div class="time-box">
+      <label class="lable-of-input">Pick a time</label>
       <input type="time" id="time" name="time" min="09:00" max="21:00" value="09:00" step="900" required />
     </div>
 
     <div class="people-number-system">
-      <img src="images/icons/icon-minus.svg">
+
+      <img class="minus-people" src="images/icons/icon-minus.svg" alt="minus icon">
+
       <div class="people-number-box">
-        <input type=number class="people" value=4 readonly />
+        <input type=number class="people" name="people" value=4 readonly />
         <p>people</p>
-      </div><img src="images/icons/icon-plus.svg">
+      </div>
+
+      <img class="add-people" src="images/icons/icon-plus.svg" alt="plus icon">
+
     </div>
 
-    <button type="submit">MAKE RESERVATION</button>
+    <button type="submit" class="submit-reservation-btn">MAKE RESERVATION</button>
 
     <div class="rectangle rectangle-left"></div>
     <img class="line" src="./images/patterns/pattern-lines.svg" />
+    <div class="notification hide"><p>We got your reservation! Thanks!</p></div>
+    
   </form>
 
 
@@ -74,5 +90,94 @@
   </div>
 
 </body>
+<script>
+  $(document).ready(function () {
+
+    // minus and plus functions
+    var numOfPeople = parseInt($(".people").attr("value"))
+    $(".add-people").click(function () {
+      if (numOfPeople < 10) {
+        numOfPeople += 1;
+        $(".people").attr("value", numOfPeople)
+      }
+    })
+    $(".minus-people").click(function () {
+      if (numOfPeople > 1) {
+        numOfPeople -= 1;
+        $(".people").attr("value", numOfPeople)
+      }
+    })
+
+
+    // click logo img go back to index page
+    $(".logo").click(function () {
+      window.location.href = 'index.html';
+    })
+    // reserve-btn 
+
+    $(".reserve-btn").click(function () {
+      window.location.href = '#reservation-form';
+    })
+
+    // submit-reservation-btn function
+    var addError = (name) => {
+      $("input[name=" + name + "]").addClass("invalid")
+      $("label[name=" + name + "]").removeClass("hidden")
+      $("label[name=" + name + "]").addClass("show")
+    }
+    var removeError = (name) => {
+      $("input[name=" + name + "]").removeClass("invalid")
+      $("label[name=" + name + "]").removeClass("show")
+      $("label[name=" + name + "]").addClass("hidden")
+    }
+    var resetInput = () => {
+      $("input[name='name']").val("")
+      $("input[name='email']").val("")
+      $("input[name='date']").val("")
+      $("input[name='people']").attr("value", 4)
+    }
+    var printOutInfo = () => {
+      console.log($("input[name='name']").val())
+      console.log($("input[name='email']").val())
+      console.log($("input[name='date']").val())
+      console.log($("input[name='time']").val())
+      console.log($("input[name='people']").attr("value") + " people")
+    }
+    var showNotification=()=>{
+      $(".notification").removeClass("hide")
+      $(".notification").addClass("show")
+    }
+    $(".submit-reservation-btn").click(function (e) {
+      e.preventDefault()
+      if ($("input[name='name']").val() && $("input[name='email']").val()
+        && $("input[name='date']").val()) {
+        printOutInfo()
+        resetInput()
+        removeError("name")
+        removeError("email")
+        removeError("date")
+          showNotification()
+      } else {
+        if (!$("input[name='name']").val()) {
+          addError("name")
+        } else {
+          removeError("name")
+        }
+        if (!$("input[name='email']").val()) {
+          addError("email")
+        } else {
+          removeError("email")
+        }
+        if (!$("input[name='date']").val()) {
+          addError("date")
+        } else {
+          removeError("date")
+        }
+
+      }
+
+    })
+  })
+</script>
 
 </html>

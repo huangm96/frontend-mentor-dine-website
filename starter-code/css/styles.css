@@ -948,7 +948,7 @@ form {
 }
 form input {
   border: none;
-  padding: 30px 5px 15px 5px;
+  padding: 18px 5px 15px 5px;
   font-family: Spartan;
   font-style: normal;
   font-weight: normal;
@@ -994,13 +994,33 @@ form .people {
   color: #151515;
   opacity: 1;
 }
-form label {
+form label.lable-of-input {
   margin-top: 30px;
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
   /* identical to box height, or 156% */
   letter-spacing: -0.225px;
+}
+form label.lable-of-error {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: -0.125px;
+  color: #B54949;
+  margin-top: 8px;
+}
+form .show {
+  display: block;
+}
+form .hidden {
+  visibility: hidden;
+}
+form .hide {
+  display: none;
+}
+form input.invalid {
+  border-bottom: 2px solid red;
 }
 form input:focus {
   outline: 1px solid transparent;
@@ -1042,6 +1062,12 @@ form .rectangle {
 form .line {
   display: none;
 }
+form .notification {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  color: green;
+}
 @media screen and (min-width: 768px) {
   form {
     padding: 60px 5%;
@@ -1051,7 +1077,7 @@ form .line {
     display: flex;
     flex-direction: row;
   }
-  form label {
+  form label.lable-of-input {
     margin-right: 30px;
     margin-top: 45px;
   }
@@ -1088,7 +1114,7 @@ form .line {
     display: block;
     position: absolute;
     z-index: -1;
-    top: 810px;
+    top: 820px;
     left: calc(45% - 80px);
   }
 }

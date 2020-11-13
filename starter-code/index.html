@@ -193,6 +193,8 @@
 </body>
 <script>
   $(document).ready(function () {
+
+    // tab function
     $(".tabs-menu a").click(function (event) {
       event.preventDefault()
       $(this).parent().addClass("active");
@@ -211,8 +213,16 @@
 
     });
 
+  // book a table button function
+  $("button").click(function(){
+    window.location.href = 'booking.html';
+  })
 
+  // click logo img go back to index page
 
+  $(".logo").click(function(){
+    window.location.href = 'index.html';
+  })
   });
 </script>
 

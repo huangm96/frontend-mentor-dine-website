@@ -10,7 +10,7 @@ form {
     input {
 
         border: none;
-        padding: 30px 5px 15px 5px;
+        padding: 18px 5px 15px 5px;
         font-family: Spartan;
         font-style: normal;
         font-weight: normal;
@@ -35,7 +35,7 @@ form {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 2px solid rgba(128, 128, 128,0.5);
+        border-bottom: 2px solid rgba(128, 128, 128, 0.5);
 
         img {
             padding: 5px 30px;
@@ -70,7 +70,7 @@ form {
         opacity: 1;
     }
 
-    label {
+    label.lable-of-input {
         margin-top: 30px;
         font-weight: normal;
         font-size: 18px;
@@ -80,7 +80,30 @@ form {
         letter-spacing: -0.225px;
     }
 
+    label.lable-of-error {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 11px;
+        letter-spacing: -0.125px;
 
+        color: #B54949;
+        margin-top: 8px;
+    }
+
+    .show{
+        display: block;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+    .hide{
+        display:none;
+    }
+
+    input.invalid {
+        border-bottom: 2px solid red;
+    }
 
     input:focus {
         outline: 1px solid transparent;
@@ -134,6 +157,13 @@ form {
 
     }
 
+    .notification {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        color: green;
+    }
+
     @media screen and(min-width:768px) {
         padding: 60px 5%;
         margin: -24vh auto 200px auto;
@@ -143,7 +173,7 @@ form {
             flex-direction: row;
         }
 
-        label {
+        label.lable-of-input {
             margin-right: 30px;
             margin-top: 45px;
         }
@@ -187,7 +217,7 @@ form {
             display: block;
             position: absolute;
             z-index: -1;
-            top: 810px;
+            top: 820px;
             left: ~"calc(45% - 80px)";
         }
     }
