@@ -941,7 +941,7 @@ form {
   display: flex;
   flex-direction: column;
   padding: 24px;
-  margin: -150px auto 150px auto;
+  margin: -150px 24px 150px 24px;
   background: white;
   box-shadow: 0px 20px 100px #888888;
   max-width: 500px;
@@ -1007,6 +1007,9 @@ form .time-box {
   flex-direction: column;
 }
 form .rectangle {
+  display: none;
+}
+form .line {
   display: none;
 }
 @media screen and (min-width: 768px) {
