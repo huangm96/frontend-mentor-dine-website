@@ -128,6 +128,8 @@ video {
   margin: 30px auto 160px auto;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
+  width: 244.25px;
+  height: 64px;
   background-color: black;
   font-weight: 600;
   font-size: 14px;
@@ -587,6 +589,8 @@ video {
 .fourth-section button {
   margin: 30px 0 100px 0;
   box-sizing: border-box;
+  width: 244.25px;
+  height: 64px;
   background-color: black;
   font-weight: 600;
   font-size: 14px;
@@ -756,6 +760,8 @@ video {
   margin-top: 30px;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
+  width: 244.25px;
+  height: 64px;
   background-color: transparent;
   font-weight: 600;
   font-size: 14px;
@@ -818,7 +824,7 @@ video {
   }
   .footer .logo {
     top: 64px;
-    left: 40px;
+    left: 10vw;
   }
   .footer .info {
     margin-left: 80px;
@@ -885,13 +891,60 @@ video {
   color: black;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .booking-header {
+    min-height: 50vh;
+    background-image: url("../images/booking/hero-bg-tablet.jpg");
+    padding: 56px 10vw;
+    text-align: start;
+  }
+  .booking-header .logo {
+    margin-top: 0;
+    margin-bottom: 64px;
+  }
+  .booking-header .title {
+    font-size: 48px;
+    line-height: 64px;
+    /* identical to box height, or 133% */
+    text-align: center;
+    letter-spacing: -0.6px;
+  }
+  .booking-header .content {
+    width: 540px;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    text-align: center;
+    letter-spacing: -0.225px;
+    margin: 24px auto;
+  }
+  .booking-header button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking-header {
+    min-height: 0vh;
+    background-image: url("../images/booking/hero-bg-desktop.jpg");
+  }
+  .booking-header .title {
+    width: 30vw;
+    text-align: start;
+  }
+  .booking-header .content {
+    width: 360px;
+    text-align: start;
+    margin: 24px 0;
+  }
+}
 form {
   display: flex;
   flex-direction: column;
   padding: 24px;
-  margin: -150px 16px 150px 16px;
+  margin: -150px auto 150px auto;
   background: white;
   box-shadow: 0px 20px 100px #888888;
+  max-width: 500px;
 }
 form input {
   border: none;
@@ -911,11 +964,13 @@ form input {
 form .email {
   margin-top: 30px;
 }
-form input[tpye=email] {
-  margin-top: 30px;
-}
 form label {
   margin-top: 30px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  letter-spacing: -0.225px;
 }
 form input:focus {
   outline: 1px solid transparent;
@@ -929,7 +984,7 @@ form input[type=date]::-webkit-datetime-edit-year-field {
   margin: auto 30px;
 }
 form button {
-  margin: 30px auto ;
+  margin: 30px auto;
   border: 1px solid black;
   box-sizing: border-box;
   width: 244.25px;
@@ -946,6 +1001,62 @@ form button:hover {
   background: white;
   color: black;
   cursor: pointer;
+}
+form .time-box {
+  display: flex;
+  flex-direction: column;
+}
+form .rectangle {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  form {
+    padding: 60px 5%;
+    margin: -24vh auto 200px auto;
+  }
+  form .time-box {
+    display: flex;
+    flex-direction: row;
+  }
+  form label {
+    margin-right: 30px;
+  }
+  form input[type=text],
+  form input[type=email] {
+    width: 90%;
+  }
+  form input[type=time],
+  form input[type=date] {
+    width: calc(90% - 131px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  form {
+    margin: -318px auto 100px 45vw;
+  }
+  form .rectangle {
+    display: block;
+    z-index: -2;
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    background: #5C6779;
+    mix-blend-mode: normal;
+    opacity: 0.08;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  form .rectangle-left {
+    top: 482px;
+    left: 0;
+    border-radius: 000px 0px 0px 100px;
+  }
+  form .line {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 640px;
+    left: calc(45% - 80px);
+  }
 }
 body {
   font-family: Spartan;

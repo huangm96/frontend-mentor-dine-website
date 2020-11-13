@@ -24,22 +24,29 @@
     <p class="title">Reservations</p>
     <p class="content"> We can’t wait to host you. If you have any special requirements please feel free to
       call on the phone number below. We’ll be happy to accommodate you.</p>
+
     <button>RESERVE PLACE</button>
   </div>
+  
+
+    <form> <input type="text" name="name" placeholder="Name" required />
+
+      <input type="email" class="email" placeholder="Email" required />
+      <div class="time-box"><label>Pick a date</label>
+        <input type="date" name="date" required /></div>
+      <div class="time-box"><label>Pick a time</label>
+        <input type="time" id="time" name="time" min="09:00" max="21:00" value="09:00" step="900" required />
+      </div>
 
 
-  <form> <input type="text" name="name" placeholder="Name" required />
 
-    <input type="email" class="email" placeholder="Email" required />
-    <label>Pick a date</label>
-    <input type="date" name="date" required />
-    <label>Pick a time</label>
-    <input type="time" id="time" name="time" min="09:00" max="21:00" value="09:00" step="900" required />
+      <button type="submit">MAKE RESERVATION</button>
 
-
-    <button type="submit">MAKE RESERVATION</button>
-  </form>
-
+<div class="rectangle rectangle-left"></div>
+<img class="line" src="./images/patterns/pattern-lines.svg" />
+    </form>
+    
+  
   <div class="footer">
     <img class="logo" src="./images/logo.svg" alt="logo img" />
     <div class="info">

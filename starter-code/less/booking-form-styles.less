@@ -2,9 +2,12 @@ form {
     display: flex;
     flex-direction: column;
     padding: 24px;
-    margin: -150px 16px 150px 16px;
+    margin: -150px auto 150px auto;
     background: white;
     box-shadow: 0px 20px 100px #888888;
+ 
+    max-width: 500px;
+
     input {
 
         border: none;
@@ -28,12 +31,16 @@ form {
         margin-top: 30px;
     }
 
-    input[tpye=email] {
-        margin-top: 30px;
-    }
+
 
     label {
         margin-top: 30px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        /* identical to box height, or 156% */
+
+        letter-spacing: -0.225px;
     }
 
 
@@ -51,27 +58,90 @@ form {
         margin: auto 30px;
     }
 
-        button {
+    button {
 
-            margin: 30px auto ;
-            border: 1px solid black;
-            box-sizing: border-box;
-            width: 244.25px;
-            height: 64px;
-            background-color: black;
+        margin: 30px auto;
+        border: 1px solid black;
+        box-sizing: border-box;
+        width: 244.25px;
+        height: 64px;
+        background-color: black;
 
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 16px;
-            /* identical to box height, or 114% */
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        /* identical to box height, or 114% */
 
-            letter-spacing: 2px;
-            color: white;
+        letter-spacing: 2px;
+        color: white;
 
-            &:hover {
-                background: white;
-                color: black;
-                cursor: pointer;
-            }
+        &:hover {
+            background: white;
+            color: black;
+            cursor: pointer;
         }
+    }
+
+    .time-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .rectangle {
+        display: none;
+
+    }
+    @media screen and(min-width:768px) {
+        padding: 60px 5%;
+        margin: -24vh auto 200px auto;
+
+        .time-box {
+            display: flex;
+            flex-direction: row;
+        }
+
+        label {
+            margin-right: 30px;
+        }
+
+        input[type=text],
+        input[type=email] {
+            width: 90%;
+        }
+
+        input[type=time],
+        input[type=date] {
+            width: ~"calc(90% - 131px)";
+        }
+    
+    }
+
+    @media screen and(min-width:1200px) {
+        margin: -318px auto 100px 45vw;
+               .rectangle {
+                   display: block;
+                   z-index: -2;
+                   width: 80%;
+                   height: 300px;
+                   position: absolute;
+                   background: #5C6779;
+                   mix-blend-mode: normal;
+                   opacity: 0.08;
+                   transform: matrix(-1, 0, 0, 1, 0, 0);
+               }
+
+               .rectangle-left {
+                   top: 482px;
+                   left: 0;
+
+                   border-radius: 000px 0px 0px 100px;
+
+               }
+               .line {
+                   display: block;
+                   position: absolute;
+                   z-index: -1;
+                   top: 640px;
+                   left:~"calc(45% - 80px)";
+               }
+    }
 }
