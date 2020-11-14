@@ -213,10 +213,10 @@ video {
 }
 .second-section .picture-place {
   margin-top: -100px;
-  background-image: url("../images/homepage/enjoyable-place-mobile.jpg");
+  background-image: url("../images/homepage/enjoyable-place-mobile@2x.jpg");
 }
 .second-section .picture-food {
-  background-image: url("../images/homepage/locally-sourced-mobile.jpg");
+  background-image: url("../images/homepage/locally-sourced-mobile@2x.jpg");
 }
 .second-section .picture-food .line {
   display: none;
@@ -258,10 +258,10 @@ video {
     width: 573px;
   }
   .second-section .picture-place {
-    background-image: url("../images/homepage/enjoyable-place-tablet.jpg");
+    background-image: url("../images/homepage/enjoyable-place-tablet@2x.jpg");
   }
   .second-section .picture-food {
-    background-image: url("../images/homepage/locally-sourced-tablet.jpg");
+    background-image: url("../images/homepage/locally-sourced-tablet@2x.jpg");
     position: relative;
   }
   .second-section .picture-food .line {
@@ -315,11 +315,11 @@ video {
     height: 720px;
   }
   .second-section .picture-place {
-    background-image: url("../images/homepage/enjoyable-place-desktop.jpg");
+    background-image: url("../images/homepage/enjoyable-place-desktop@2x.jpg");
   }
   .second-section .picture-food {
     margin-bottom: -100px;
-    background-image: url("../images/homepage/locally-sourced-desktop.jpg");
+    background-image: url("../images/homepage/locally-sourced-desktop@2x.jpg");
   }
   .second-section .picture-food .line {
     top: 250px;
@@ -392,13 +392,13 @@ video {
   margin: 50px auto;
 }
 .third-section .dishes-box .picture-salmon {
-  background-image: url("../images/homepage/salmon-mobile.jpg");
+  background-image: url("../images/homepage/salmon-mobile@2x.jpg");
 }
 .third-section .dishes-box .picture-beef {
-  background-image: url("../images/homepage/beef-mobile.jpg");
+  background-image: url("../images/homepage/beef-mobile@2x.jpg");
 }
 .third-section .dishes-box .picture-chocolate {
-  background-image: url("../images/homepage/chocolate-mobile.jpg");
+  background-image: url("../images/homepage/chocolate-mobile@2x.jpg");
 }
 .third-section .dishes-box .dish-content .dish-title {
   font-weight: bold;
@@ -448,13 +448,13 @@ video {
     margin: 0;
   }
   .third-section .dishes-box .picture-salmon {
-    background-image: url("../images/homepage/salmon-desktop-tablet.jpg");
+    background-image: url("../images/homepage/salmon-desktop-tablet@2x.jpg");
   }
   .third-section .dishes-box .picture-beef {
-    background-image: url("../images/homepage/beef-desktop-tablet.jpg");
+    background-image: url("../images/homepage/beef-desktop-tablet@2x.jpg");
   }
   .third-section .dishes-box .picture-chocolate {
-    background-image: url("../images/homepage/chocolate-desktop-tablet.jpg");
+    background-image: url("../images/homepage/chocolate-desktop-tablet@2x.jpg");
   }
   .third-section .dishes-box .dish-content {
     text-align: start;
@@ -511,13 +511,13 @@ video {
   display: none;
 }
 .fourth-section .picture.family {
-  background-image: url("../images/homepage/family-gathering-mobile.jpg");
+  background-image: url("../images/homepage/family-gathering-mobile@2x.jpg");
 }
 .fourth-section .picture.special {
-  background-image: url("../images/homepage/special-events-mobile.jpg");
+  background-image: url("../images/homepage/special-events-mobile@2x.jpg");
 }
 .fourth-section .picture.social {
-  background-image: url("../images/homepage/social-events-mobile.jpg");
+  background-image: url("../images/homepage/social-events-mobile@2x.jpg");
 }
 .fourth-section .tab {
   display: flex;
@@ -623,13 +623,13 @@ video {
     margin-left: -60px;
   }
   .fourth-section .picture.family {
-    background-image: url("../images/homepage/family-gathering-tablet.jpg");
+    background-image: url("../images/homepage/family-gathering-tablet@2x.jpg");
   }
   .fourth-section .picture.special {
-    background-image: url("../images/homepage/special-events-tablet.jpg");
+    background-image: url("../images/homepage/special-events-tablet@2x.jpg");
   }
   .fourth-section .picture.social {
-    background-image: url("../images/homepage/social-events-tablet.jpg");
+    background-image: url("../images/homepage/social-events-tablet@2x.jpg");
   }
   .fourth-section .content-title {
     font-size: 40px;
@@ -680,13 +680,13 @@ video {
     margin-left: -60px;
   }
   .fourth-section .picture.family {
-    background-image: url("../images/homepage/family-gathering-desktop.jpg");
+    background-image: url("../images/homepage/family-gathering-desktop@2x.jpg");
   }
   .fourth-section .picture.special {
-    background-image: url("../images/homepage/special-events-desktop.jpg");
+    background-image: url("../images/homepage/special-events-desktop@2x.jpg");
   }
   .fourth-section .picture.social {
-    background-image: url("../images/homepage/social-events-desktop.jpg");
+    background-image: url("../images/homepage/social-events-desktop@2x.jpg");
   }
   .fourth-section #tabs-container {
     display: flex;
@@ -733,7 +733,7 @@ video {
   }
 }
 .fifth-section {
-  background-image: url("../images/homepage/ready-bg-mobile.jpg");
+  background-image: url("../images/homepage/ready-bg-mobile@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 24px;
@@ -771,12 +771,12 @@ video {
 }
 @media screen and (min-width: 768px) {
   .fifth-section {
-    background-image: url("../images/homepage/ready-bg-tablet.jpg");
+    background-image: url("../images/homepage/ready-bg-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .fifth-section {
-    background-image: url("../images/homepage/ready-bg-desktop.jpg");
+    background-image: url("../images/homepage/ready-bg-desktop@2x.jpg");
     padding: 80px 10vw;
     flex-direction: row;
     justify-content: space-between;
@@ -845,7 +845,7 @@ video {
   min-height: 100vh;
   text-align: center;
   color: white;
-  background-image: url("../images/booking/hero-bg-mobile.jpg");
+  background-image: url("../images/booking/hero-bg-mobile@2x.jpg");
   padding: 16px 24px;
 }
 .booking-header .logo {
@@ -888,7 +888,7 @@ video {
 @media screen and (min-width: 768px) {
   .booking-header {
     min-height: 50vh;
-    background-image: url("../images/booking/hero-bg-tablet.jpg");
+    background-image: url("../images/booking/hero-bg-tablet@2x.jpg");
     padding: 56px 10vw;
   }
   .booking-header .logo {
@@ -916,7 +916,7 @@ video {
 @media screen and (min-width: 1200px) {
   .booking-header {
     min-height: 0vh;
-    background-image: url("../images/booking/hero-bg-desktop.jpg");
+    background-image: url("../images/booking/hero-bg-desktop@2x.jpg");
     text-align: start;
   }
   .booking-header .title {
