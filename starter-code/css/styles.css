@@ -206,6 +206,7 @@ video {
 }
 .second-section .picture {
   width: 100%;
+  max-width: 327px;
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,6 +255,7 @@ video {
     margin: 0 0;
   }
   .second-section .picture {
+    max-width: none;
     height: 360px;
     width: 573px;
   }
@@ -386,6 +388,7 @@ video {
 }
 .third-section .dishes-box .picture {
   width: 100%;
+  max-width: 327px;
   height: 245px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -444,6 +447,7 @@ video {
   }
   .third-section .dishes-box .picture {
     width: 128px;
+    max-width: none;
     height: 96px;
     margin: 0;
   }
@@ -501,6 +505,7 @@ video {
 }
 .fourth-section .picture {
   width: 90vw;
+  max-width: 327px;
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -614,6 +619,7 @@ video {
   }
   .fourth-section .picture {
     width: 573px;
+    max-width: none;
     height: 360px;
     margin: 120px auto 10px auto;
   }
