@@ -202,7 +202,6 @@ video {
 .second-section .intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .second-section .picture {
