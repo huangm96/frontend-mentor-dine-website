@@ -1125,4 +1125,5 @@ body {
 .logo {
   width: 103px;
   height: 40px;
+  cursor: pointer;
 }
