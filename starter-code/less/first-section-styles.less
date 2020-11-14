@@ -1,18 +1,10 @@
 @import "./mixins/button-mixins.less";
-
+@import "./mixins/header-img-mixins.less";
 
 .first-section {
 
-    color: white;
-
+    .header-img-bg();
     background-image: url("../images/homepage/hero-bg-mobile.jpg");
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-
-
 
     display: flex;
     flex-direction: column;
@@ -23,7 +15,7 @@
     }
 
     .content {
-        width:80vw;
+        width: 80vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,13 +24,11 @@
 
 
     .title {
-
         font-weight: 300;
         font-size: 32px;
         line-height: 40px;
-        /* or 125% */
+        /* identical to box height, or 125% */
 
-        text-align: center;
         letter-spacing: -0.8px;
         padding: 0 20px;
         margin: 25px 0;
@@ -50,9 +40,7 @@
         line-height: 25px;
         /* or 167% */
 
-        text-align: center;
         letter-spacing: -0.1875px;
-        
     }
 
     button {
@@ -66,7 +54,7 @@
 
         background-image: url("../images/homepage/hero-bg-tablet.jpg");
 
-        
+
 
         .title {
 
@@ -74,7 +62,6 @@
             line-height: 64px;
             /* or 133% */
 
-            text-align: center;
             letter-spacing: -0.6px;
 
             padding: 0 100px;
@@ -86,7 +73,6 @@
             line-height: 30px;
             /* or 167% */
 
-            text-align: center;
             letter-spacing: -0.225px;
         }
     }
@@ -103,7 +89,7 @@
 
         .logo {
             margin-top: 65px;
-            margin-left:10vw;
+            margin-left: 10vw;
             margin-bottom: 100px;
         }
 

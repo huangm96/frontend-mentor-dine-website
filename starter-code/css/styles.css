@@ -87,12 +87,13 @@ video {
   vertical-align: baseline;
 }
 .first-section {
-  color: white;
-  background-image: url("../images/homepage/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  text-align: center;
+  color: white;
+  background-image: url("../images/homepage/hero-bg-mobile.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,8 +111,7 @@ video {
   font-weight: 300;
   font-size: 32px;
   line-height: 40px;
-  /* or 125% */
-  text-align: center;
+  /* identical to box height, or 125% */
   letter-spacing: -0.8px;
   padding: 0 20px;
   margin: 25px 0;
@@ -121,21 +121,20 @@ video {
   font-size: 15px;
   line-height: 25px;
   /* or 167% */
-  text-align: center;
   letter-spacing: -0.1875px;
 }
 .first-section button {
   margin: 30px auto 160px auto;
-  border: 1px solid #FFFFFF;
+  background-color: black;
   width: 244.25px;
   height: 64px;
-  background-color: black;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   /* identical to box height, or 114% */
   letter-spacing: 2px;
   color: white;
+  border: 1px solid #FFFFFF;
 }
 .first-section button:hover {
   background: white;
@@ -151,7 +150,6 @@ video {
     font-size: 48px;
     line-height: 64px;
     /* or 133% */
-    text-align: center;
     letter-spacing: -0.6px;
     padding: 0 100px;
   }
@@ -160,7 +158,6 @@ video {
     font-size: 18px;
     line-height: 30px;
     /* or 167% */
-    text-align: center;
     letter-spacing: -0.225px;
   }
 }
@@ -293,13 +290,12 @@ video {
     position: relative;
   }
   .second-section .rectangle {
-    display: block;
-    z-index: -1;
     width: 50vw;
     height: 320px;
+    display: block;
+    z-index: -1;
     position: absolute;
     background: #5C6779;
-    mix-blend-mode: normal;
     opacity: 0.08;
     transform: matrix(-1, 0, 0, 1, 0, 0);
   }
@@ -588,16 +584,16 @@ video {
 }
 .fourth-section button {
   margin: 30px 0 100px 0;
-  border: 1px solid #FFFFFF;
+  background-color: black;
   width: 244.25px;
   height: 64px;
-  background-color: black;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   /* identical to box height, or 114% */
   letter-spacing: 2px;
   color: white;
+  border: 1px solid #FFFFFF;
 }
 .fourth-section button:hover {
   background: white;
@@ -652,13 +648,12 @@ video {
     width: 50vw;
   }
   .fourth-section .rectangle {
-    display: block;
-    z-index: -1;
     width: 50%;
     height: 320px;
+    display: block;
+    z-index: -1;
     position: absolute;
     background: #5C6779;
-    mix-blend-mode: normal;
     opacity: 0.08;
     transform: matrix(-1, 0, 0, 1, 0, 0);
   }
@@ -758,22 +753,22 @@ video {
 }
 .fifth-section button {
   margin-top: 30px;
-  border: 1px solid #FFFFFF;
+  background-color: transparent;
   width: 244.25px;
   height: 64px;
-  background-color: transparent;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   /* identical to box height, or 114% */
   letter-spacing: 2px;
   color: white;
+  border: 1px solid #FFFFFF;
 }
 .fifth-section button:hover {
   background: white;
-  border: 1px solid black;
   color: black;
   cursor: pointer;
+  border: 1px solid black;
 }
 @media screen and (min-width: 768px) {
   .fifth-section {
@@ -845,12 +840,13 @@ video {
   }
 }
 .booking-header {
-  text-align: center;
-  color: white;
-  min-height: 100vh;
-  background-image: url("../images/booking/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+  background-image: url("../images/booking/hero-bg-mobile.jpg");
   padding: 16px 24px;
 }
 .booking-header .logo {
@@ -861,7 +857,7 @@ video {
   font-size: 32px;
   line-height: 40px;
   /* identical to box height, or 125% */
-  letter-spacing: -0.4px;
+  letter-spacing: -0.8px;
 }
 .booking-header .content {
   font-weight: normal;
@@ -873,29 +869,28 @@ video {
 }
 .booking-header button {
   margin: 30px auto 160px auto;
-  border: 1px solid #FFFFFF;
+  background-color: transparent;
   width: 244.25px;
   height: 64px;
-  background-color: transparent;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   /* identical to box height, or 114% */
   letter-spacing: 2px;
   color: white;
+  border: 1px solid #FFFFFF;
 }
 .booking-header button:hover {
   background: white;
-  border: 1px solid black;
   color: black;
   cursor: pointer;
+  border: 1px solid black;
 }
 @media screen and (min-width: 768px) {
   .booking-header {
     min-height: 50vh;
     background-image: url("../images/booking/hero-bg-tablet.jpg");
     padding: 56px 10vw;
-    text-align: start;
   }
   .booking-header .logo {
     margin-top: 0;
@@ -905,7 +900,6 @@ video {
     font-size: 48px;
     line-height: 64px;
     /* identical to box height, or 133% */
-    text-align: center;
     letter-spacing: -0.6px;
   }
   .booking-header .content {
@@ -913,7 +907,6 @@ video {
     font-size: 18px;
     line-height: 30px;
     /* or 167% */
-    text-align: center;
     letter-spacing: -0.225px;
     margin: 24px auto;
   }
@@ -925,14 +918,13 @@ video {
   .booking-header {
     min-height: 0vh;
     background-image: url("../images/booking/hero-bg-desktop.jpg");
+    text-align: start;
   }
   .booking-header .title {
     width: 30vw;
-    text-align: start;
   }
   .booking-header .content {
     width: 360px;
-    text-align: start;
     margin: 24px 0;
   }
 }
@@ -1034,16 +1026,16 @@ form input[type=date]::-webkit-datetime-edit-year-field {
 }
 form button {
   margin: 30px auto;
-  border: 1px solid #FFFFFF;
+  background-color: black;
   width: 244.25px;
   height: 64px;
-  background-color: black;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   /* identical to box height, or 114% */
   letter-spacing: 2px;
   color: white;
+  border: 1px solid #FFFFFF;
 }
 form button:hover {
   background: white;
@@ -1095,14 +1087,14 @@ form .notification {
   }
   form .rectangle {
     display: block;
-    z-index: -2;
-    width: calc(55% + 250px);
-    height: 459px;
+    z-index: -1;
     position: absolute;
     background: #5C6779;
-    mix-blend-mode: normal;
     opacity: 0.08;
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    z-index: -2;
+    width: calc(55% + 250px);
+    height: 470px;
   }
   form .rectangle-left {
     top: 482px;

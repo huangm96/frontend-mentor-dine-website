@@ -1,4 +1,5 @@
 @import "./mixins/button-mixins.less";
+@import "./mixins/rectangle-mixins.less";
 
 .fourth-section {
     display: flex;
@@ -196,15 +197,9 @@
 
 
         .rectangle {
-            display: block;
-            z-index: -1;
             width: 50%;
             height: 320px;
-            position: absolute;
-            background: #5C6779;
-            mix-blend-mode: normal;
-            opacity: 0.08;
-            transform: matrix(-1, 0, 0, 1, 0, 0);
+            .rectangle-basic();
         }
 
         .rectangle-left {

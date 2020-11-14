@@ -1,4 +1,5 @@
 @import "./mixins/button-mixins.less";
+@import "./mixins/rectangle-mixins.less";
 
 form {
     display: flex;
@@ -179,15 +180,11 @@ form {
         margin: -318px auto 100px 45vw;
 
         .rectangle {
-            display: block;
+            .rectangle-basic();
             z-index: -2;
             width: ~"calc(55% + 250px)";
-            height: 459px;
-            position: absolute;
-            background: #5C6779;
-            mix-blend-mode: normal;
-            opacity: 0.08;
-            transform: matrix(-1, 0, 0, 1, 0, 0);
+            height: 470px;
+
         }
 
         .rectangle-left {
