@@ -1,3 +1,5 @@
+@import "./mixins/button-mixins.less";
+
 form {
     display: flex;
     flex-direction: column;
@@ -90,15 +92,16 @@ form {
         margin-top: 8px;
     }
 
-    .show{
+    .show {
         display: block;
     }
 
     .hidden {
         visibility: hidden;
     }
-    .hide{
-        display:none;
+
+    .hide {
+        display: none;
     }
 
     input.invalid {
@@ -115,31 +118,13 @@ form {
     input[type=date]::-webkit-datetime-edit-day-field,
     input[type=date]::-webkit-datetime-edit-month-field,
     input[type=date]::-webkit-datetime-edit-year-field {
-        margin: auto 30px;
+        margin: auto 25px;
     }
 
     button {
 
         margin: 30px auto;
-        border: 1px solid black;
-        box-sizing: border-box;
-        width: 244.25px;
-        height: 64px;
-        background-color: black;
-
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 16px;
-        /* identical to box height, or 114% */
-
-        letter-spacing: 2px;
-        color: white;
-
-        &:hover {
-            background: white;
-            color: black;
-            cursor: pointer;
-        }
+        .black-button-white-text();
     }
 
     .time-box {
